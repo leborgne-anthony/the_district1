@@ -1,0 +1,14 @@
+{
+    "name": "lebor/district",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Anthony Leborgne"
+        }
+    ],
+    "require": {}
+}

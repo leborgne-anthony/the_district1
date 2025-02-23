@@ -1,0 +1,31 @@
+.header {
+    background: url(/assets/images/bg.jpeg) no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__search {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    outline: none;
+    text-align: center;
+}
+
+.header__search-input::placeholder {
+    color: black;
+}
+

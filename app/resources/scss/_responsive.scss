@@ -1,0 +1,103 @@
+/* Responsive for mobile */
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .navbar__container{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navbar__logo img {
+        width: 100px; 
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    /* Menu for mobile */
+    .navbar__menu {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: relative;
+        top: 60px;
+        left: 0;
+        z-index: 9999;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0;
+    }
+
+    .navbar__menu-item {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .navbar__menu-item a {
+        padding: 10px;
+        font-size: 18px;
+        display: block;
+        color: #333;
+    }
+
+    .navbar__toggle {
+        display: block;
+    }
+
+    .navbar__menu--active{
+        display: block;
+    }
+
+    /* Header */
+    .header{
+        background-size: cover;
+        height: 200px;
+    }
+
+    .header__search{
+        display: none;
+    }
+
+    /* grid */
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid__item img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    /* Formulaire de contact */
+    .contact-form{
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Footer */
+    .footer{
+        width: 60%;
+    }
+}
