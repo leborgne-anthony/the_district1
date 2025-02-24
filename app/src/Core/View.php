@@ -9,7 +9,7 @@ class View
 
         if (self::isValidView($viewPath)) {
             foreach ($data as $key => $value) {
-                $$key = htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+                $key = $value;
             }
 
             require $viewPath;

@@ -1,23 +1,24 @@
 <?php 
-    if (session_status() === PHP_SESSION_NONE) {
-        session_start();
-    }
+    use App\Core\Session;
+    $session = Session::getInstance();
 ?>
 <?php require_once "partials/header.php" ?>
     
     <!-- Header -->
-    <header class="header">
-        <form class="header__search">
-            <input type="search" class="header__search-input" placeholder="Recherche...">
-        </form>
-    </header>
+    <header class="header"></header>
 
-    <?php if (!empty($_SESSION['success'])): ?>
-        <p class="success"><?= $_SESSION['success']; unset($_SESSION['success']); ?></p>
+    <?php if ($session->has('success')): ?>
+        <div class="alert alert-success">
+            <?= htmlspecialchars($session->get('success')) ?>
+        </div>
+        <?php $session->remove('success'); ?>
     <?php endif; ?>
 
-    <?php if (!empty($_SESSION['error'])): ?>
-        <p class="error"><?= $_SESSION['error']; unset($_SESSION['error']); ?></p>
+    <?php if ($session->has('error')): ?>
+        <div class="alert alert-danger">
+            <?= htmlspecialchars($session->get('error')) ?>
+        </div>
+        <?php $session->remove('error'); ?>
     <?php endif; ?>
 
     <!-- Main -->
