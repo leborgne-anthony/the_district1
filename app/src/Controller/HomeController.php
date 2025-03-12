@@ -11,13 +11,13 @@ class HomeController
         $imageOptimizerService = new ImageOptimizerService();
 
         $images = [
-            '/../public/assets/images/categories/pizza_cat.jpg',
-            '/../public/assets/images/plats/cheesburger.jpg',
-            '/../public/assets/images/plats/Food-Name-3631.jpg',
-            '/../public/assets/images/plats/Food-Name-3631.jpg',
-            '/../public/assets/images/plats/Food-Name-3631.jpg',
-            '/../public/assets/images/plats/Food-Name-3631.jpg',
-            '/../public/assets/images/plats/Food-Name-3631.jpg',
+            'assets/images/categories/pizza_cat.jpg',
+            'assets/images/plats/cheesburger.jpg',
+            'assets/images/plats/Food-Name-3631.jpg',
+            'assets/images/plats/Food-Name-3631.jpg',
+            'assets/images/plats/Food-Name-3631.jpg',
+            'assets/images/plats/Food-Name-3631.jpg',
+            'assets/images/plats/Food-Name-3631.jpg',
         ];
 
         $optimizedImages = [];
