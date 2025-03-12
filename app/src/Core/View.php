@@ -8,9 +8,7 @@ class View
         $viewPath = __DIR__ . "/../views/" . str_replace('.', '/', $view) . ".php";
 
         if (self::isValidView($viewPath)) {
-            foreach ($data as $key => $value) {
-                $key = $value;
-            }
+            extract($data);
 
             require $viewPath;
         } else {

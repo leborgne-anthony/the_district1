@@ -8,9 +8,7 @@ class ContactService
     public static function saveMessage(array $data): bool
     {
         $uploadDir = __DIR__ . "/../../public/uploads/";
-        if (!is_dir($uploadDir) && !mkdir($uploadDir, 0775, true)) {
-            throw new Exception("Impossible de créer le dossier d'upload.");
-        }
+       
 
         $nom       = $data['nom'] ?? '';
         $prenom    = $data['prenom'] ?? '';

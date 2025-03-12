@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: php82
+    container_name: php8
     ports:
       - "8000:80"
     volumes:
