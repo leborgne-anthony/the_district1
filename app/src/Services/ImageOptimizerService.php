@@ -28,12 +28,12 @@ class ImageOptimizerService {
             throw new \Exception("Le fichier $imagePath n'est pas une image valide.");
         }
 
-        // Skip if already WebP
+        
         if ($imageInfo['mime'] === 'image/webp') {
-            return $imagePath; // Return the original path if already WebP
+            return $imagePath; 
         }
 
-        // Generate WebP path
+        
         $webpImagePath = preg_replace("/\.(jpg|jpeg|png|gif)$/", '.webp', $imagePath);
 
         if ($webpImagePath === $imagePath) {
@@ -51,7 +51,7 @@ class ImageOptimizerService {
             $this->convertToWebp($imagePath, $webpImagePath);
         }
 
-        return $webpImagePath; // Return the path of the optimized WebP image
+        return $webpImagePath; 
     }
 
     private function convertToWebp(string $imagePath, string $webpImagePath) {
